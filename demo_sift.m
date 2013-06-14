@@ -48,9 +48,9 @@ positives_training_16_set = positives_training_16_set(:, selected_training);
 total_hits = 0;
 total_misses = 0;
 confusion_matrix = zeros(5, 5);
-offset = 80;
+offset = 0;
 
-for test_num=1:size(test_set, 2)
+for test_num=1:size(test_set, 2)-offset
     fprintf('Performing classification on image#%d/%d.\n', test_num+offset, size(test_set, 2));
 
 %    test_image = test_set(:, test_num);
