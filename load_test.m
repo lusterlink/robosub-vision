@@ -10,9 +10,9 @@ function [ test_set, labels ] = load_test(rotate_images )
 %           10 is 4
     positive_directories = ['98_test'; '37_test'; '16_test'; '10_test'];
     
-    NUM_POS = 300;
-    NUM_EMPTY_NEG = 250;
-    NUM_GENERAL_NEG = 250;
+    NUM_POS = 80;
+    NUM_EMPTY_NEG = 60;
+    NUM_GENERAL_NEG = 60;
     NUM_OVERALL = NUM_POS + NUM_EMPTY_NEG + NUM_GENERAL_NEG;
     
     test_set = zeros(640*480, NUM_OVERALL, 'uint8');
